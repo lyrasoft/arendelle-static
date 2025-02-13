@@ -1,0 +1,24 @@
+# OS generated files #
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# IDE Ignores #
+.idea/
+.vscode/
+
+# Extra #
+!.gitkeep
+
+# Configuration #
+.env
+.env.local
+.env*.local
+!.env.dist
+
+# 如果想將 html/css/js 記錄到 git 裡面，移除下面這幾行 #
+/assets
+**/*.html
+!.vaseman/**/*.html

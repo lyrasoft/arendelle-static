@@ -1,12 +1,12 @@
 {
     "private": true,
     "scripts": {
-        "build": "cross-env node_modules/.bin/gulp",
-        "build:dev": "cross-env NODE_ENV=development node_modules/.bin/gulp",
-        "build:prod": "cross-env NODE_ENV=production node_modules/.bin/gulp",
-        "dev": "cross-env NODE_ENV=development node_modules/.bin/gulp --watching=1",
-        "watch": "cross-env NODE_ENV=development node_modules/.bin/gulp --watching=1",
-        "watch:reload": "cross-env NODE_ENV=development node_modules/.bin/gulp --watching=1 --livereload=1",
+        "build": "cross-env gulp",
+        "build:dev": "cross-env NODE_ENV=development gulp",
+        "build:prod": "cross-env NODE_ENV=production gulp",
+        "dev": "cross-env NODE_ENV=development gulp --watching=1",
+        "watch": "cross-env NODE_ENV=development gulp --watching=1",
+        "watch:reload": "cross-env NODE_ENV=development gulp --watching=1 --livereload=1",
         "postinstall": "yarn build install"
     },
     "dependencies": {
@@ -22,5 +22,9 @@
         "micromatch": "^4.0.8",
         "postcss": "^8.4.31",
         "sass": "1.77.6"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "gulp": "^4.0"
     }
 }

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    {{-- 展示用網站禁止 Google 索引 --}}
+    <meta name="robots" content="noindex">
+
     <link rel="shortcut icon" href="{{ $asset->path('images/favicon.png') }}" />
 
     <title>@yield('title', $helper->page->title($config['title'] ?? ''))</title>

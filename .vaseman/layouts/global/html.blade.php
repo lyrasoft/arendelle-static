@@ -15,18 +15,18 @@
     @yield('meta')
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskerville:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" />
-    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css?{{ $asset->v }}" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css?{{ $asset->v }}" />
     @stack('style')
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css?{{ $asset->v }}" />
 
     @stack('head')
 </head>
 <body class="{{ $helper->page->bodyClass() }}">
 @yield('superbody')
 
-<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery/dist/jquery.min.js?{{ $asset->v }}"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js?{{ $asset->v }}"></script>
 
 @stack('script')
 </body>

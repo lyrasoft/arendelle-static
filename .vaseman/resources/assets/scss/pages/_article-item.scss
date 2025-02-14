@@ -1,0 +1,14 @@
+.route-articles-item {
+  .l-article-item {
+    margin-top: -220px;
+  }
+
+  .c-article-card__actions {
+    .btn {
+      @include media-breakpoint-down(md) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
+}

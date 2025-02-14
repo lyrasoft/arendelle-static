@@ -1,0 +1,50 @@
+.route-articles-news {
+  .l-article-nav {
+    .btn-group {
+      @include media-breakpoint-up(lg) {
+        gap: 2rem;
+
+        > .btn {
+          border-radius: 50px !important;
+        }
+      }
+    }
+
+    .c-button {
+      transition: all .3s;
+      line-height: 1.25;
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      letter-spacing: 2px;
+      color: #A9A3A0;
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      &:hover {
+        background-color: #F0E8DF;
+      }
+
+      &.active {
+        background-color: $primary;
+        color: #F0E8DF;
+      }
+
+      &__zh {
+        font-size: 1.5rem;
+      }
+
+      &__en {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  .c-article-item {
+    box-shadow: 0 0 20px rgba(121, 137, 184, 0.2);
+  }
+}

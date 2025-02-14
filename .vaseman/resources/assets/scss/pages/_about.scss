@@ -1,0 +1,35 @@
+.route-about {
+  .c-feature-item {
+    &__num {
+      font-size: 16px;
+      color: $golden-tint;
+      font-family: $title-font;
+      line-height: 1;
+      margin-bottom: -20px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 76px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title-zh {
+      color: $golden-tint;
+      font-size: 32px;
+    }
+
+    &__title-en {
+      color: $golden-tint;
+      font-size: 24px;
+    }
+
+    .h-text--zh {
+      font-size: 18px;
+    }
+
+    &__image {
+      flex-basis: 33%;
+      flex-shrink: 0;
+    }
+  }
+}

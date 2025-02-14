@@ -26,14 +26,14 @@
                 <div class="offcanvas-body">
                     <ul class="nav navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="#">
+                            <a class="nav-link active"
+                                href="about.html">
                                 教育願景
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="#">
+                                href="articles/news.html">
                                 最新消息
                             </a>
                         </li>

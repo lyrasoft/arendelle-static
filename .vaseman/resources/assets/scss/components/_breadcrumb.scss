@@ -3,7 +3,8 @@
   --bs-breadcrumb-divider: '\f054';
 
   .breadcrumb-item::before {
-    font-family: 'Font Awesome 6 Pro', serif;
+    font-family: 'Font Awesome 6 Free', serif;
+    font-weight: 900;
     --bs-breadcrumb-divider-color: #{$golden-tint};
     font-size: 12px;
     margin-top: 3px;

@@ -14,18 +14,19 @@
     @stack('meta')
     @yield('meta')
 
-    <link href="asseets/vendor/@fortawesome/fontawesome-pro/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskerville:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
     @stack('style')
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     @stack('head')
 </head>
-<body class="{{ $helper->page->bodyClass() }}" style="margin-top: 50px">
+<body class="{{ $helper->page->bodyClass() }}">
 @yield('superbody')
 
-<script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 @stack('script')
 </body>

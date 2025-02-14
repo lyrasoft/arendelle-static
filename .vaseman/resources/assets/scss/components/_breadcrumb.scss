@@ -1,1 +1,22 @@
 
+.c-breadcrumb {
+  --bs-breadcrumb-divider: '\f054';
+
+  .breadcrumb-item::before {
+    font-family: 'Font Awesome 6 Pro', serif;
+    --bs-breadcrumb-divider-color: #{$golden-tint};
+    font-size: 12px;
+    margin-top: 3px;
+    opacity: .85;
+  }
+
+  .breadcrumb-item a[href] {
+    color: $golden-tint;
+    transition: all .3s;
+    opacity: .85;
+
+    &:hover {
+      color: darken($golden-tint, 5%);
+    }
+  }
+}

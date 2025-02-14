@@ -1,0 +1,50 @@
+// Part of arendelle file.
+
+.nav-rounded-tabs {
+  gap: 1.5rem;
+  justify-content: center;
+
+  .nav-link {
+    border-radius: 60px;
+    padding: .75rem 1.25rem;
+    min-width: 160px;
+    text-align: center;
+
+    background-color: #F7F4F1;
+    border-color: #F0E8DF;
+    color: lighten($golden-light, 5%);
+
+    &:hover {
+      background-color: lighten($secondary, 22%);
+    }
+
+    &.active {
+      background-color: white;
+      border: 1px solid $golden-light;
+      color: $golden-light;
+    }
+  }
+}
+
+.nav-tags {
+  gap: 1rem;
+
+  .nav-link {
+    border: 1px solid $golden-light;
+    color: $dark;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    transition: all .3s;
+    --bs-nav-link-padding-y: .75rem;
+    --bs-nav-link-padding-x: 1.75rem;
+
+    &:hover {
+      background-color: #F0E8DF;
+    }
+
+    &.active {
+      background-color: $primary;
+      color: #F0E8DF;
+    }
+  }
+}

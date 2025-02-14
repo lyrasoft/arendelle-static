@@ -1,0 +1,35 @@
+// Part of arendelle file.
+
+.btn-feature {
+  @include button-variant(
+    #F0E8DF,
+    $golden-light,
+    $hover-background: $secondary
+  );
+
+  &.btn-lg {
+    --bs-btn-line-height: 38px;
+  }
+}
+
+.btn-lg {
+  --bs-btn-line-height: 38px;
+}
+
+.btn-arrow {
+  position: relative;
+  margin-left: -19px;
+  --bs-btn-padding-x: 4rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -37px;
+    background-image: url(../images/deco/button-arrow.svg);
+  }
+}

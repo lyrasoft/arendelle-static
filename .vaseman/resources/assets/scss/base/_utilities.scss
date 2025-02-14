@@ -1,1 +1,13 @@
 
+%v-element {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--clamp-lines, 3);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

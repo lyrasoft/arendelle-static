@@ -1,1 +1,62 @@
 
+.l-banner--page {
+  position: relative;
+  padding-top: 82px;
+  height: calc(100vw / 1440 * 420); // Keep ratio from design
+  min-height: 420px;
+  overflow: hidden;
+
+  background-image: url(../images/banners/page-banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+
+  .l-banner__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    padding-top: 86px;
+    padding-left: 50px;
+    background-image: url(../images/banners/banner-text-deco-star.svg);
+    background-repeat: no-repeat;
+    background-position: 0 45px;
+  }
+
+  .l-banner__deco-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+  }
+
+  .l-banner__title-en {
+    font-size: 28px;
+    font-family: $title-font;
+    letter-spacing: .7px;
+  }
+
+  .l-banner__title {
+    position: relative;
+    display: flex;
+    color: $golden-tint;
+
+    h2 {
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+
+    &::after {
+      @extend %v-element;
+      right: -280px;
+      bottom: 16px;
+      width: 190px;
+      height: 13px;
+      background-image: url(../images/banners/banner-text-deco-line.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}

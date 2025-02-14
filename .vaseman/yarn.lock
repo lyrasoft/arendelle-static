@@ -5484,6 +5484,7 @@ __metadata:
     gulp: "npm:^4.0"
     gulp-typescript: "npm:^6.0.0-alpha.1||^6.0"
     jquery: "npm:^3.6.0"
+    swiper: "npm:^11.2.3"
     typescript: "npm:^5.7.3"
   languageName: unknown
   linkType: soft
@@ -6081,6 +6082,13 @@ __metadata:
     es6-iterator: "npm:^2.0.1"
     es6-symbol: "npm:^3.1.1"
   checksum: 10c0/23388477ff4c6ef45c66d3a1347cb392cfcfd2e995ab15b56fd0f4fed1c263730f71816ffb62a433d37aa467939a3b9ccc9542bf2d0ef1f38fdd23cd77842dcb
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.2.3":
+  version: 11.2.3
+  resolution: "swiper@npm:11.2.3"
+  checksum: 10c0/7759f377a13e104a97a4d653647eba2008851b4b7da8bddcbcc90914621447c8f8f26e28138a2edb492ddcc77bc1697f3e0378354bd6e069a36fd3902de6c453
   languageName: node
   linkType: hard
 

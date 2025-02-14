@@ -1,37 +1,57 @@
-<header class="l-main-header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href=".">
-                <img src="images/logo-cw-h.svg"
+<header class="">
+    <div class="container fixed-top">
+        <nav class="l-main-nav navbar navbar-expand-lg navbar-light bg-white flex-nowrap">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo-cw-h.svg"
                     alt="LOGO"
-                    style="height: 25px;"
+                    class="img-fluid"
+                    style="height: 58px;"
                 />
             </a>
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar"
+                aria-controls="offcanvas-navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="far fa-bars text-primary fs-2"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href=".">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="article/article.html">
-                            Article
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    {{--  Right Menu  --}}
-                </ul>
+            <div class="offcanvas offcanvas-start" id="offcanvas-navbar" tabindex="-1">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvas-navbar-label">
+                        選單
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#">
+                                教育願景
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#">
+                                最新消息
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#">
+                                校園特色
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#">
+                                聯絡我們
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </header>

@@ -1,9 +1,7 @@
-<footer id="l-main-footer">
+<div id="copyright">
     <div class="container">
-        <hr />
-
-        <footer>
-            &copy; Vaseman {{ date('Y') }}
+        <footer class="text-center text-dark py-3 small">
+            Copyright © {{ date('Y') }} ARENDELLE PRESCHOOL ALL RIGHTS RESERVED
         </footer>
     </div>
-</footer>
+</div>

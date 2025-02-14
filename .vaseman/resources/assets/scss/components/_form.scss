@@ -1,0 +1,48 @@
+// Part of arendelle file.
+
+.h-std-form {
+  input:disabled {
+    &::placeholder {
+      color: $gray-400;
+    }
+  }
+
+  input:not([type=radio]):not([type=checkbox]):not([type=submit]), select {
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+  }
+
+  textarea, input:not([type=radio]):not([type=checkbox]):not([type=submit]), select {
+    border-color: $primary;
+    transition: all .3s;
+
+    &:disabled {
+      border-color: $gray-400 !important;
+    }
+
+    &:placeholder-shown {
+      border-color: $light-blue;
+    }
+
+    &:focus {
+      background-color: rgba($info, .075);
+    }
+  }
+
+  .was-validated .form-control:invalid, .form-control.is-invalid {
+    border-color: $orange !important;
+  }
+
+  input[type=checkbox]:not([role=switch]) {
+    border-color: #333;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+
+    &:checked {
+      background-color: transparent;
+      background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20fill%3D%22%23162857%22%20d%3D%22M438.6%20105.4c12.5%2012.5%2012.5%2032.8%200%2045.3l-256%20256c-12.5%2012.5-32.8%2012.5-45.3%200l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200L160%20338.7%20393.4%20105.4c12.5-12.5%2032.8-12.5%2045.3%200z%22%2F%3E%3C%2Fsvg%3E');
+      background-size: 80%;
+    }
+  }
+}

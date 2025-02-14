@@ -72,7 +72,8 @@ export async function install() {
     [
       '@fortawesome/fontawesome-free',
       'bootstrap',
-      'jquery'
+      'jquery',
+      'swiper',
     ]
   );
 }

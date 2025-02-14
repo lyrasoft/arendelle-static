@@ -1,0 +1,76 @@
+:root {
+  --main-font: #{$main-font};
+  --title-font: #{$title-font};
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+}
+
+.text-feature {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  //letter-spacing: 0.04em;
+}
+
+.c-feature-title {
+  text-align: center;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 252px;
+    height: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/deco/feature-title-deco.svg);
+    background-repeat: no-repeat;
+  }
+
+  &__top {
+    color: $golden;
+    font-family: $title-font;
+    font-size: 1.75rem;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 20px;
+      border-bottom: 1px solid $golden-light;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -36px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 20px;
+      border-bottom: 1px solid $golden-light;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -36px;
+    }
+  }
+
+  &__text {
+    line-height: 57px;
+    font-size: 2.5rem;
+    color: $primary-dark;
+  }
+}
+
+.article-content {
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  font-size: 1.125rem;
+}

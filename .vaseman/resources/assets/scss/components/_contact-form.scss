@@ -1,0 +1,174 @@
+// Part of arendelle file.
+
+.l-section--contact {
+  background-image: url(../images/home/contact-bg.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(lg) {
+    background-size: contain;
+  }
+}
+
+.c-contact-nav-link {
+  padding-top: .5rem !important;
+  position: relative;
+
+  &__step {
+    font-family: $title-font;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.c-contact-nav-link--line::after {
+  @extend %v-element;
+  right: -50px;
+  top: 50%;
+  border-bottom: 1px solid $golden-light;
+  width: 100px;
+  z-index: -1;
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+// Cards
+.l-contact-cards {
+  position: relative;
+  height: 750px;
+
+  @include media-breakpoint-up(lg) {
+    height: 500px;
+  }
+}
+
+.c-contact-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 680px;
+  transition: all .5s;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 450px;
+  }
+
+  .c-deco-star, .c-deco-h-line {
+    display: none;
+  }
+
+  @include media-breakpoint-up(xl) {
+    .c-deco-star, .c-deco-h-line {
+      display: block;
+    }
+  }
+}
+
+.c-contact-card--step1 {
+  z-index: 4;
+}
+
+.c-contact-card--step2 {
+  z-index: 3;
+  transform: rotate(-3.94deg);
+  left: -30px;
+  background-color: #F7F4F1;
+}
+
+.c-contact-card--step3 {
+  z-index: 2;
+}
+
+.c-contact-card--step4 {
+  z-index: 1;
+}
+
+.l-contact-cards.reach-1 {
+  .c-contact-card--step1 {
+    //
+  }
+
+  .c-contact-card--step2 {
+    transform: rotate(-3.94deg);
+    left: -30px;
+    top: -13px;
+    background-color: #F7F4F1;
+  }
+
+  .c-contact-card--step3 {
+    transform: rotate(3.06deg);
+    background: #F0E8DF;
+    left: 20px;
+    top: -10px;
+  }
+
+  .c-contact-card--step4 {
+    top: -20px;
+    background: #E9DDCD;
+  }
+}
+
+.l-contact-cards.reach-2 {
+  .c-contact-card--step1 {
+    transform: rotate(-40deg) translate(-260px, -780px);
+    opacity: 0;
+  }
+
+  .c-contact-card--step2 {
+    transform: rotate(0);
+    left: 0;
+    top: 0;
+    background-color: white;
+  }
+
+  .c-contact-card--step3 {
+    transform: rotate(5.06deg);
+    background: #F7F4F1;
+    left: 20px;
+    top: -10px;
+  }
+
+  .c-contact-card--step4 {
+    transform: rotate(-3deg);
+    top: -20px;
+    background: #F0E8DF;
+  }
+}
+
+.l-contact-cards.reach-3 {
+  .c-contact-card--step2 {
+    transform: rotate(-40deg) translate(-260px, -780px);
+    opacity: 0;
+  }
+
+  .c-contact-card--step3 {
+    transform: rotate(0);
+    background: white;
+    left: 0;
+    top: 0;
+  }
+
+  .c-contact-card--step4 {
+    transform: rotate(-5deg);
+    top: -20px;
+    background: #F7F4F1;
+  }
+}
+
+.l-contact-cards.reach-4 {
+  .c-contact-card--step3 {
+    transform: rotate(-40deg) translate(-260px, -780px);
+    opacity: 0;
+  }
+
+  .c-contact-card--step4 {
+    transform: rotate(0);
+    top: 0;
+    left: 0;
+    background: white;
+  }
+}

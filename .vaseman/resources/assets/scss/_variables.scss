@@ -1,7 +1,97 @@
 
 // Override variables
-// $theme-colors: ( 'primary': #007bff );
+$enable-dark-mode: false;
+
+$primary: #355B81;
+$primary-dark: #162857;
+$info: #315BC4;
+$secondary: #D9BF9F;
+$dark: #2F2019; // Dark Brown
+$brown: #3F292B;
+$orange: #FDB068;
+$golden: #D18B3B;
+$golden-light: #D9BF9F;
+$golden-tint: #E9DDCD;
+
+$color-contrast-dark: $primary-dark;
+
+// Custom Colors
+$light-blue: #7989B8;
+
+// Fonts
+$main-font: 'jf-openhuninn', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+$title-font: Baskerville, 'Noto Serif TC', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+
+$font-family-sans-serif: $main-font;
+
+// Typography
+$link-decoration: none;
+
+// Navbar
+$navbar-light-color: $primary;
+$navbar-light-active-color: $primary-dark;
+$navbar-nav-link-padding-x: 1.2rem;
+
+$offcanvas-horizontal-width: 320px;
+
+// Buttons
+$btn-border-radius: 50px;
+$btn-padding-x: 1.25rem;
+
+$btn-border-radius-lg: 50px;
+$btn-padding-x-lg: 2.25rem;
+
+$btn-border-radius-sm: 50px;
+$btn-padding-x-sm: .85rem;
+
+// Form
+$input-focus-box-shadow: none;
+$input-disabled-bg: white;
+
+$form-select-focus-box-shadow: none;
+$form-label-color: rgba($primary, .7);
+
+$form-feedback-invalid-color: $orange;
+
+// Pagination
+$pagination-color: rgba($dark, .4);
+$pagination-border-width: 0;
+
+$pagination-active-color:           $primary;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    transparent;
 
 @import "./node_modules/bootstrap/scss/functions";
 @import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
 @import "./node_modules/bootstrap/scss/mixins";
+
+// Form
+$input-disabled-color: $gray-300;
+$input-disabled-border-color: $gray-300;
+
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+      'primary-dark': $primary-dark
+    )
+);
+
+$colors: map-merge($colors, (
+  'brown': $brown,
+  'light-blue': $light-blue,
+  'golden': $golden,
+  'golden-light': $golden-light,
+  'golden-tint': $golden-tint,
+));
+
+$spacers: map-merge(
+    (
+      6: ($spacer * 6),
+      7: ($spacer * 12),
+      8: ($spacer * 24)
+    ),
+    $spacers,
+);
+
+@import "./node_modules/bootstrap/scss/maps";

@@ -10,11 +10,11 @@ return [
     // Which folders you want to generate (Array)
     'folders' => [
         'entries' => '',
-        'assets' => 'assets'
+//        'assets' => 'assets'
     ],
 
     'links' => [
-        //
+        'assets' => 'assets'
     ],
 
     // Plugin classes with namespace (Array)

@@ -1,6 +1,6 @@
 @push('script')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.min.js"></script>
-    <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/contact-form.js?{{ $asset->v }}"></script>
 @endpush
 
 <div id="c-contact-form-app">

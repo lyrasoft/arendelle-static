@@ -39,13 +39,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="#">
+                                href="features.html">
                                 校園特色
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="#">
+                                href="contact.html">
                                 聯絡我們
                             </a>
                         </li>

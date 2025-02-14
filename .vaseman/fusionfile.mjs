@@ -36,10 +36,6 @@ export async function css() {
       'resources/assets/scss/main.scss',
       'assets/css/main.css'
     ),
-    sass(
-      'resources/assets/scss/bootstrap.scss',
-      'assets/css/bootstrap.css'
-    )
   );
 }
 

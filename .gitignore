@@ -19,6 +19,6 @@ Thumbs.db
 !.env.dist
 
 # 如果想將 html/css/js 記錄到 git 裡面，移除下面這幾行 #
-/assets
-**/*.html
-!.vaseman/**/*.html
+#/assets
+#**/*.html
+#!.vaseman/**/*.html

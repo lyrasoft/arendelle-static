@@ -73,3 +73,9 @@ export async function install() {
 ```
 
 然後再執行 `yarn add swiper` 就會自動把套件抓到 `assets/vendor` 內，可以直接引入。
+
+## Design System
+
+Design System 統一放在主選單第一個連結（若空間夠的話）
+
+![Image](https://github.com/user-attachments/assets/a28b93f9-5ee2-4b09-a15a-852ea269176e)

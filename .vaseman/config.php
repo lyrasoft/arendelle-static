@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'project' => [
-        'name' => 'Vaseman'
+        'name' => 'Arendelle'
     ],
 
     // Which folders you want to generate (Array)

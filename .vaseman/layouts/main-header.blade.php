@@ -13,7 +13,7 @@
                 aria-controls="offcanvas-navbar"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
-                <i class="far fa-bars text-primary fs-2"></i>
+                <i class="fa fa-bars text-primary fs-2"></i>
             </button>
             <div class="offcanvas offcanvas-start" id="offcanvas-navbar" tabindex="-1">
                 <div class="offcanvas-header">

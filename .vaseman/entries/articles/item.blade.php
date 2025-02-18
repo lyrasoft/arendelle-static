@@ -1,3 +1,6 @@
+---
+title: 和寶貝一起探索「白努利的秘密」🔍
+---
 @extends('global.body')
 
 @push('style')

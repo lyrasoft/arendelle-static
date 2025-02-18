@@ -1,4 +1,6 @@
-
+---
+title: 教育願景
+---
 
 @extends('global.body')
 

@@ -1,4 +1,6 @@
-
+---
+title: 聯絡我們
+---
 @extends('global.body')
 
 @section('banner')

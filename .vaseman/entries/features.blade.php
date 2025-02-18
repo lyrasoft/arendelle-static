@@ -1,3 +1,6 @@
+---
+title: 校園特色
+---
 @extends('global.body')
 
 @push('style')

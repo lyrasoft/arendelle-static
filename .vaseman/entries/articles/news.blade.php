@@ -1,3 +1,6 @@
+---
+title: 最新消息 & 活動
+---
 @extends('global.body')
 
 @section('banner')

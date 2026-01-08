@@ -16,6 +16,10 @@
   * [Design System](#design-system)
 <!-- TOC -->
 
+> [!warning]
+> ## 警告
+> 請勿使用這個模版作為切版的基本模版，請使用 https://github.com/lyrasoft/outsource-layout-template
+
 ## 安裝
 
 ```shell
